@@ -1,5 +1,6 @@
-class Route < ActiveRecord::Base
+class Stop < ActiveRecord::Base
   validates :name, presence: true
   validates :code, presence: true
-  has_many :stops
+
+  belongs_to :route
 end

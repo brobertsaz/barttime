@@ -1,0 +1,6 @@
+%h1 Welcome to the Bart App
+
+%h3 Select your route:
+
+- simple_form_for :route, routes_path, method: :get do |f|
+  = f.input :route, collection: @routes

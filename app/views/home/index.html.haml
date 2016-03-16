@@ -1,5 +1,6 @@
-%h1 Welcome to the Bart App
+.col-xs-12.col-xs-offset-2
+  %h1 Welcome to the Bart App
 
-%h3 Select your route:
+  %h3 Select your route:
 
-= select_tag 'route_id', options_for_select(@routes.collect{ |u| [u.name, u.id] })
+  = select_tag 'route_id', options_for_select(@routes.collect{ |u| [u.name, u.id] })
